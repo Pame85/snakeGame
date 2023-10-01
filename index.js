@@ -184,4 +184,8 @@ function keyDown(event) {
   }
 }
 
+function playAgain () {
+  document.getElementById("flex-box-rps-div").reset();
+}
+
 drawGame();

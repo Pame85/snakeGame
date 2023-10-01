@@ -3,15 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
     <title>Document</title>
     <style>
+        h1{
+            color: blue;
+            font-size: 300%;
+            font-family: "Audiowide", sans-serif;
+        }
+        
         body{
+            background-image: url("https://e1.pxfuel.com/desktop-wallpaper/130/242/desktop-wallpaper-snakes-ladders-king-full-apk-direct-fast-link-snake-and-ladder.jpg");
+            background-position: mirror;
+            background-size: cover;
             margin: 0px;
             padding: 0px;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            
+
         }
         canvas{
             box-shadow: black 20px 10px 50px;
@@ -20,10 +32,17 @@
 </head>
 
 <body>
-    <h1>THE SNAKE GAME!</h1>
-    <iframe src="https://giphy.com/embed/5fwoTYsw2D6yFI5X9x" width="300" height="150" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
-    
+    <h1 class="font-effect-shadow-multiple">Snake Game !</h1>
+    <iframe src="https://giphy.com/embed/5fwoTYsw2D6yFI5X9x" width="350" height="150" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+     
     <canvas id="game" width="400" height="400"/>
+
+    <div class="flex-box-rps">
+        <span>
+          <button class="btn btn-warning" onclick="playAgain()">Restart Game</button>
+        </span>
+      </div>
+
     <script src="index.js"></script>
 </body>
 </html>
